@@ -1,11 +1,13 @@
 doctype
 html
     head
-        link(rel="shortcut icon",href="/favicon.png", type"image/x-icon")
-        link(rel="stylesheet", href="/css/bootstrap.css")
-        link(rel="stylesheet", href="/css/vendor/toastr/toastr.css")
+        title Mean
+        link(rel="shortcut icon", href="favicon.png", type="image/x-icon")
+        link(rel="stylesheet", href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css")
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css")
         link(rel="stylesheet", href="/css/site.css")
         base(href="/")
     body(ng-app='app')
+        include currentUser
         block main-content
         include scripts
